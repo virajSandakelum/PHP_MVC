@@ -1,5 +1,9 @@
 <?php
 
+echo '<pre>';
+print_r($_SERVER['PHP_SELF']);
+echo '</pre>';
+
 
 // import the controller class functions
 class Home extends Controller{
