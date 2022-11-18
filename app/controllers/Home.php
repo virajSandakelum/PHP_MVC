@@ -9,6 +9,9 @@ echo '</pre>';
 class Home extends Controller{
 
     public function index(){
+        $model = new Model();
+        $model->tets();
+        
         echo "This is the home controller";
         $this->view('home');
     }

@@ -6,7 +6,7 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
     define('DB_HOST', 'localhost');
     define('DB_USER','root');
     define('DB_PASS','');
-    define('DB_NAME','unigura');
+    define('DB_NAME','my_db');
 
 
 
@@ -19,7 +19,7 @@ if($_SERVER['SERVER_NAME'] == 'localhost'){
     define('DB_HOST', 'localhost');
     define('DB_USER','root');
     define('DB_PASS','');
-    define('DB_NAME','unigura');
+    define('DB_NAME','my_db');
 
     
     // This is for the online server
