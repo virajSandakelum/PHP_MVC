@@ -16,3 +16,5 @@ core => this contains things that to be always loaded, when the website is runni
 
 2. When we are adding the individual models inside the models folder,
    then we can reuse the common functionalities inside the model folder.
+
+3. Most of the time, Model.php has public functions, because we use have to use outside the Model.php file.

@@ -10,8 +10,9 @@ class Home extends Controller{
 
     public function index(){
         $model = new Model();
-        $model->tets();
-        
+        $result = $model->query("SELECT * FROM users");
+        shows($result);
+
         echo "This is the home controller";
         $this->view('home');
     }
