@@ -1,0 +1,19 @@
+RewriteEngine On
+
+# if user type valid file name then it should load that file name
+RewriteCond %{REQUEST_FILENAME} !-f
+
+
+# if user type valid directory name then it should load that directory name
+RewriteCond %{REQUEST_FILENAME} !-d
+
+# without above line, we can't load CSS or JS files 
+
+
+# if user type 
+# 1. valid file name
+# 2. valid directory name
+# then it should load index.php file
+
+RewriteRule ^(.*)$ index.php?url=$1 [QSA,L]
+
