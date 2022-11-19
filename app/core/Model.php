@@ -12,7 +12,7 @@
 // everythings in the Database.php, we can use here
 // we can use the" query function" here
 
-class Model
+Trait Model
 {
     use Database;
     // each database table has a seperate model.

@@ -5,11 +5,11 @@
 class Home extends Controller{
 
     public function index(){
-        $model = new Model();
+        $user = new User;
 
         $arr['name'] = 'viraj';
         $arr['age'] = 20;
-        $result = $model->update(2, $arr);
+        $result = $user->insert($arr);
 
         shows($result);
 

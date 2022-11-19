@@ -18,3 +18,6 @@ core => this contains things that to be always loaded, when the website is runni
    then we can reuse the common functionalities inside the model folder.
 
 3. Most of the time, Model.php has public functions, because we use have to use outside the Model.php file.
+
+4. Model should be singuler
+    eg: User.php, Post.php, Comment.php
