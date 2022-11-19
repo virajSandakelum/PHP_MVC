@@ -1,19 +1,19 @@
 <?php
 
-echo '<pre>';
-print_r($_SERVER['PHP_SELF']);
-echo '</pre>';
-
 
 // import the controller class functions
 class Home extends Controller{
 
     public function index(){
         $model = new Model();
-        $result = $model->query("SELECT * FROM users");
+
+        $arr['name'] = 'viraj';
+        $arr['age'] = 20;
+        $result = $model->update(2, $arr);
+
         shows($result);
 
-        echo "This is the home controller";
+        // echo "This is the home controller";
         $this->view('home');
     }
 
